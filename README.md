@@ -53,7 +53,7 @@ Nouns: diary
 Verbs: view (see/get)  
 | Objects | Properties | Messages | Output |
 |---------|------------|----------|--------|
-| Diary | entries @Array[@String] | viewEntry() | Void |
+| Diary | entries @Array[@String] | viewEntry() | @Array[@String] |
 
 
 ## Final Domain Model
@@ -61,4 +61,4 @@ Verbs: view (see/get)
 |---------|------------|----------|--------|
 | Diary | isLocked @Boolean | unlock() | Void |
 | | entries @Array[@String]  | addEntry() | Void |
-| | | viewEntry() | Void |
+| | | viewEntry() | Array[@String] |

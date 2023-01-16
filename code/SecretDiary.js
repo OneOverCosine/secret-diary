@@ -4,22 +4,22 @@ class SecretDiary {
     entries = [];
 
     addEntry(str) {
-        if (this.locked) throw new Error(`AAHHHHHH`);
-        this.push(str);
+        if (this.locked) throw new Error(`Cannot add entries when the diary is locked`);
+        this.entries.push(str);
     }
 
     getEntries() {
-        if (this.locked) throw new Error();
+        if (this.locked) throw new Error(`Cannot view entries when the diary is locked`);
         return this.entries;
     }
 
-    lock() {
-        this.lock = true;
-    }
+    // lock() {
+    //     this.locked = true;
+    // }
 
-    unlock() {
-        this.unlock = false;
-    }
+    // unlock() {
+    //     this.locked = false;
+    // }
 };
 
 module.exports = SecretDiary;
