@@ -1,0 +1,22 @@
+{
+  "name": "secret-diary",
+  "version": "1.0.0",
+  "description": "- Initially the `SecretDiary` class is locked, meaning `addEntry(str)` and `getEntries()` should throw an error.\r - When the user calls `unlock()`, `addEntry()` and `getEntries()` should work as desired.\r - When the user calls `lock()` again `addEntry()` and `getEntries()` throw errors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneOverCosine/secret-diary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OneOverCosine/secret-diary/issues"
+  },
+  "homepage": "https://github.com/OneOverCosine/secret-diary#readme",
+  "devDependencies": {
+    "jasmine": "^4.5.0"
+  }
+}
