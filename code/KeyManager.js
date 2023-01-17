@@ -4,6 +4,4 @@ class KeyManager {
     static unlock = (item) => { item.locked = false };
 }
 
-
-
 export default KeyManager;

@@ -22,6 +22,4 @@ class SecretDiary {
     // }
 };
 
-
-
 export default SecretDiary;
