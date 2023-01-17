@@ -2,6 +2,7 @@
   "name": "secret-diary",
   "version": "1.0.0",
   "description": "- Initially the `SecretDiary` class is locked, meaning `addEntry(str)` and `getEntries()` should throw an error.\r - When the user calls `unlock()`, `addEntry()` and `getEntries()` should work as desired.\r - When the user calls `lock()` again `addEntry()` and `getEntries()` throw errors.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jasmine"

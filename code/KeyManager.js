@@ -6,5 +6,4 @@ class KeyManager {
 
 
 
-
-module.exports = KeyManager;
+export default KeyManager;

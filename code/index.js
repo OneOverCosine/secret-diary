@@ -1,5 +1,5 @@
-const KeyManager = require("./KeyManager");
-const SecretDiary = require(`./SecretDiary`);
+import KeyManager from "./KeyManager.js";
+import SecretDiary from "./SecretDiary.js";
 
 
 const myDiary = new SecretDiary();

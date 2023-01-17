@@ -22,4 +22,6 @@ class SecretDiary {
     // }
 };
 
-module.exports = SecretDiary;
+
+
+export default SecretDiary;
