@@ -9,14 +9,19 @@
 #1
 As a user
 So no one can access my diary
-I want the diary to be lockable
+I want to start off locked
 ```
-Nouns: diary  
-Verbs: lock  
+Nouns: diary, lock  
+Verbs: lock???  
 
-| Objects | Properties | Messages | Output |
-|---------|------------|----------|--------|
-| Diary | isLocked @Boolean | lock() | Void |
+| Objects | Properties        | Messages     | Output   |
+|---------|-------------------|--------------|----------|
+| Lock    | locked @Boolean   | isLocked()   | @Boolean |
+| Diary   | lock @Lock        | isLocked()   | @Boolean |
+
+Tests
+1. When a diary is created it's locked
+2. 
 
 ```
 #2
@@ -26,9 +31,9 @@ I want the diary to be unlockable
 ```
 Nouns: diary  
 Verbs: unlock  
-| Objects | Properties | Messages | Output |
-|---------|------------|----------|--------|
-| Diary | isLocked @Boolean | unlock() | Void |
+| Objects | Properties        | Messages | Output |
+|---------|-------------------|----------|--------|
+| Diary   | isLocked @Boolean | unlock() | Void   |
 
 
 ```
@@ -39,9 +44,9 @@ I'd like the ability to add entries
 ```
 Nouns: diary  
 Verbs: add (set)  
-| Objects | Properties | Messages | Output |
-|---------|------------|----------|--------|
-| Diary | entries @Array[@String] | addEntry() | Void |
+| Objects | Properties              | Messages   | Output |
+|---------|-------------------------|------------|--------|
+| Diary   | entries @Array[@String] | addEntry() | Void   |
 
 ```
 #4
@@ -51,14 +56,14 @@ I'd like the ability to view entries
 ```
 Nouns: diary  
 Verbs: view (see/get)  
-| Objects | Properties | Messages | Output |
-|---------|------------|----------|--------|
-| Diary | entries @Array[@String] | viewEntry() | @Array[@String] |
+| Objects | Properties              | Messages    | Output          |
+|---------|-------------------------|-------------|-----------------|
+| Diary   | entries @Array[@String] | viewEntry() | @Array[@String] |
 
 
 ## Final Domain Model
-| Objects | Properties | Messages | Output |
-|---------|------------|----------|--------|
-| Diary | isLocked @Boolean | unlock() | Void |
-| | entries @Array[@String]  | addEntry() | Void |
-| | | viewEntry() | Array[@String] |
+| Objects | Properties               | Messages    | Output         |
+|---------|--------------------------|-------------|----------------|
+| Diary   | isLocked @Boolean        | unlock()    | Void           |
+|         | entries @Array[@String]  | addEntry()  | Void           |
+|         |                          | viewEntry() | Array[@String] |
