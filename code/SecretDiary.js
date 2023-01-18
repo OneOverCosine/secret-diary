@@ -7,4 +7,10 @@ export default class SecretDiary {
     }
 
     isLocked = () => this.#lock.isLocked();
+
+    getEntries = () => {
+        if (this.#lock.isLocked()) {
+            throw new Error(`Diary is locked`)
+        }
+    };
 }
